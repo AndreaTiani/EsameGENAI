@@ -1,0 +1,26 @@
+[
+  {
+    "loss_type": "collision",
+    "required_documents": [
+      "photo",
+      "police_report"
+    ],
+    "automatic_review_max": 3000
+  },
+  {
+    "loss_type": "water_damage",
+    "required_documents": [
+      "photo",
+      "repair_invoice"
+    ],
+    "automatic_review_max": 5000
+  },
+  {
+    "loss_type": "theft",
+    "required_documents": [
+      "police_report",
+      "photo"
+    ],
+    "automatic_review_max": 1000
+  }
+]

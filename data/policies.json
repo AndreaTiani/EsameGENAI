@@ -1,0 +1,29 @@
+[
+  {
+    "policy_id": "POL001",
+    "customer_id": "AS001",
+    "product": "Auto",
+    "coverage": "collision",
+    "deductible": 250,
+    "max_claim": 15000,
+    "active": true
+  },
+  {
+    "policy_id": "POL002",
+    "customer_id": "AS002",
+    "product": "Home",
+    "coverage": "water_damage",
+    "deductible": 500,
+    "max_claim": 10000,
+    "active": true
+  },
+  {
+    "policy_id": "POL003",
+    "customer_id": "AS003",
+    "product": "Auto",
+    "coverage": "collision",
+    "deductible": 1000,
+    "max_claim": 8000,
+    "active": false
+  }
+]

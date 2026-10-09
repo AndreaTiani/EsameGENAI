@@ -1,0 +1,6 @@
+{
+  "id": "05_pratica_assicurativa",
+  "title": "Assistente per pratica assicurativa",
+  "domain": "Insurance",
+  "goal": "Valutare una richiesta di sinistro, raccogliere documenti mancanti e decidere esito/escalation."
+}

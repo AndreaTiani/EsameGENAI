@@ -1,0 +1,17 @@
+[
+  {
+    "customer_id": "AS001",
+    "name": "Pietro Sala",
+    "risk_tier": "standard"
+  },
+  {
+    "customer_id": "AS002",
+    "name": "Chiara Riva",
+    "risk_tier": "premium"
+  },
+  {
+    "customer_id": "AS003",
+    "name": "Enrico Villa",
+    "risk_tier": "standard"
+  }
+]

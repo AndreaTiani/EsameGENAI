@@ -1,0 +1,40 @@
+[
+  {
+    "claim_id": "CL001",
+    "policy_id": "POL001",
+    "loss_type": "collision",
+    "estimated_damage": 1200,
+    "documents": [
+      "photo",
+      "police_report"
+    ]
+  },
+  {
+    "claim_id": "CL002",
+    "policy_id": "POL002",
+    "loss_type": "water_damage",
+    "estimated_damage": 7000,
+    "documents": [
+      "photo"
+    ]
+  },
+  {
+    "claim_id": "CL003",
+    "policy_id": "POL003",
+    "loss_type": "collision",
+    "estimated_damage": 1500,
+    "documents": [
+      "photo",
+      "police_report"
+    ]
+  },
+  {
+    "claim_id": "CL004",
+    "policy_id": "POL001",
+    "loss_type": "theft",
+    "estimated_damage": 2000,
+    "documents": [
+      "photo"
+    ]
+  }
+]
