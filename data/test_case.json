@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "nome": "Approvazione automatica, documenti completi",
+    "prompt": "Buongiorno, sono il cliente AS001. Ieri un'auto mi ha tamponato al semaforo. Pratica CL101, polizza POL001, danno stimato 1200 euro. Allego le foto dei danni e il verbale dei carabinieri.",
+    "input": [],
+    "esito": "APPROVATO",
+    "interrupt": 0,
+    "indennizzo": 950
+  },
+  {
+    "id": 2,
+    "nome": "Manca la denuncia: 1 interrupt documenti",
+    "prompt": "Salve, cliente AS001, pratica CL102, polizza POL001. Mi hanno tamponato in autostrada, danno stimato 2000 euro. Allego solo le foto.",
+    "input": [
+      "police_report"
+    ],
+    "esito": "APPROVATO",
+    "interrupt": 1,
+    "indennizzo": 1750
+  },
+  {
+    "id": 3,
+    "nome": "Input di 'analizza_documenti' non validi: troppi tentativi",
+    "prompt": "Sono AS001, pratica CL104, polizza POL001, incidente stradale, danno 1500 euro. Non allego nulla.",
+    "input": [
+      "boh",
+      "boh",
+      "boh"
+    ],
+    "esito": "TROPPI_TENTATIVI",
+    "interrupt": 3
+  },
+  {
+    "id": 4,
+    "nome": "Escalation: il perito approva",
+    "prompt": "Ciao, sono AS002. Un tubo del bagno si è rotto e ha allagato il parquet. Pratica CL105, polizza POL002, danno stimato 7000 euro. Allego le foto e la fattura dell'idraulico.",
+    "input": [
+      "si"
+    ],
+    "esito": "APPROVATO",
+    "interrupt": 1,
+    "indennizzo": 6500
+  },
+  {
+    "id": 5,
+    "nome": "Escalation: il perito rifiuta",
+    "prompt": "Ciao, sono AS002. Si è rotta una tubatura in cucina e l'acqua ha rovinato il pavimento. Pratica CL106, polizza POL002, danno stimato 8000 euro. Allego foto e fattura dell'idraulico.",
+    "input": [
+      "no"
+    ],
+    "esito": "RIFIUTATO",
+    "interrupt": 1
+  },
+  {
+    "id": 6,
+    "nome": "Danno oltre il massimale",
+    "prompt": "Sono AS001. Incidente grave, auto distrutta. Pratica CL108, polizza POL001, danno stimato 20000 euro. Allego foto e verbale della polizia stradale.",
+    "input": [],
+    "esito": "RIFIUTATO",
+    "interrupt": 0
+  },
+  {
+    "id": 7,
+    "nome": "Polizza non attiva",
+    "prompt": "Buongiorno, sono AS003. Mi hanno tamponato ieri, pratica CL109, polizza POL003, danno 1500 euro. Allego foto e verbale dei carabinieri.",
+    "input": [],
+    "esito": "RIFIUTATO",
+    "interrupt": 0
+  },
+  {
+    "id": 8,
+    "nome": "Polizza di un altro cliente",
+    "prompt": "Sono AS001. Allagamento in cantina, pratica CL110, polizza POL002, danno 2000 euro. Allego foto e fattura.",
+    "input": [],
+    "esito": "RIFIUTATO",
+    "interrupt": 0
+  },
+  {
+    "id": 9,
+    "nome": "Tipo di sinistro non coperto (furto su polizza collision)",
+    "prompt": "Stanotte mi hanno rubato lo stereo dall'auto. Sono AS001, pratica CL111, polizza POL001, danno 800 euro. Allego la denuncia ai carabinieri e le foto.",
+    "input": [],
+    "esito": "RIFIUTATO",
+    "interrupt": 0
+  },
+  {
+    "id": 10,
+    "nome": "Cliente inesistente",
+    "prompt": "Ciao, sono AS999. Incidente ieri sera, pratica CL112, polizza POL001, danno 1000 euro. Allego foto e verbale.",
+    "input": [],
+    "esito": "RIFIUTATO",
+    "interrupt": 0
+  },
+  {
+    "id": 11,
+    "nome": "Dati mancanti (nessun codice polizza)",
+    "prompt": "Mi hanno tamponato ieri, il danno è di circa 1000 euro. Sono AS001, pratica CL113.",
+    "input": [],
+    "esito": "RIFIUTATO",
+    "interrupt": 0
+  },
+  {
+    "id": 12,
+    "nome": "Richiesta fuori scopo (preventivo)",
+    "prompt": "Buongiorno, vorrei sapere quanto costerebbe una polizza casa per un appartamento di 80 mq.",
+    "input": [],
+    "esito": "FUORI_SCOPO",
+    "interrupt": 0
+  }
+]
